@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Blossom | Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">🌸 Bloom & Blossom</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#flowers">Flowers</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="cart-btn" id="cartButton">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tagline">FLOWERS FOR EVERY MOMENT</span>
+            <h1>Say It With<br><span>Beautiful Flowers</span></h1>
+            <p>Fresh blooms, lovely bouquets and little moments
+               of happiness delivered with love.</p>
+            <a href="#flowers" class="shop-btn">Shop Flowers →</a>
+        </div>
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=900&q=85"
+                alt="Beautiful fresh flower bouquet">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div>🌷 <strong>Fresh Flowers</strong><small>Handpicked blooms</small></div>
+        <div>🎁 <strong>Lovely Gifts</strong><small>Made with love</small></div>
+        <div>🚚 <strong>Quick Delivery</strong><small>To your doorstep</small></div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="flowers">
+        <div class="section-heading">
+            <span class="tagline">OUR COLLECTION</span>
+            <h2>Find Your Perfect Bouquet</h2>
+            <p>Flowers that make every day a little more special.</p>
+        </div>
+
+        <div class="shop-controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search flowers...">
+
+            <select id="categoryFilter">
+                <option value="all">All Flowers</option>
+                <option value="roses">Roses</option>
+                <option value="tulips">Tulips</option>
+                <option value="lilies">Lilies</option>
+                <option value="mixed">Mixed Bouquets</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <p id="emptyMessage" class="empty-message" hidden>
+            No flowers found. Try another search!
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=85"
+                alt="Colorful flowers arranged in a bouquet">
+        </div>
+        <div class="about-content">
+            <span class="tagline">A LITTLE ABOUT US</span>
+            <h2>Bringing Smiles, One Flower at a Time</h2>
+            <p>
+                At Bloom & Blossom, we believe every flower tells a story.
+                Our collection is designed to celebrate birthdays,
+                anniversaries, friendships and everyday happiness.
+            </p>
+            <a href="#flowers" class="shop-btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="cart-section" id="cart">
+        <h2>🛒 Your Shopping Cart</h2>
+        <div id="cartItems">
+            <p>Your cart is empty. Add some beautiful flowers!</p>
+        </div>
+        <h3>Total: <span id="cartTotal">₹0</span></h3>
+        <button class="shop-btn" id="checkoutButton">
+            Proceed to Checkout
+        </button>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <span class="tagline">GET IN TOUCH</span>
+        <h2>We'd Love to Hear From You!</h2>
+        <p>Have a question about your bouquet? Contact our flower team.</p>
+        <a href="mailto:urmail.bhumika@gmail.com">
+            ✉ urmail.bhumika@gmail.com
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🌸 Bloom & Blossom</p>
+        <p>Made with love & flowers | BHUMIKA SHARMA</p>
+        <p>© 2026 Bloom & Blossom. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
